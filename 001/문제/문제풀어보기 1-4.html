@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 평균점수 / 학점 </title>
+</head>
+
+<body>
+    국어, 수학, 영어 점수를 입력받아 평균 점수를 나타내세요.
+    <script>
+        let kor = Number(prompt("국어 점수는?"));
+        let math = Number(prompt("수학 점수는?"));
+        let eng = Number(prompt("영어 점수는?"));
+        let message = "시험 결과"
+        let sum = kor + eng + math;
+        let avg = sum / 3;
+        let result = (kor + eng + math) / 3;
+
+        if (result >= 90)
+            result = "A 장학금 지급 대상입니다.";
+        else if (result >= 80)
+            result = "B";
+        else
+            result = "F";
+
+        document.write("<h2> 국어:" + kor + "점, 영어:" + eng + "점, 수학:" + math + "점으로 합계는 " + sum + "점</h2>");
+        document.write("<h2> 평균점수는" + avg + "점입니다.</h2>");
+        document.write("<h2> 학점" + result + "</h2>");
+
+        // 4.  점수를 입력받아 학점을 구하시오(90점이상 A, 80점 이상B, 나머지 F)
+        // 5.  국어, 영어, 수학점수를 입력받아 평균을 출력하시오
+        // 6.  국어, 영어점수 입력 받아  모두 90점 이상이면 장학금 지급 출력
+
+    </script>
+</body>
+
+</html>

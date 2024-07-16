@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>제곱구하기</h2>
+
+    <div>
+        <label for="numberInput">수 입력:</label>
+        <input type="number" id="numberInput">
+        <button onclick="calculateSquare()">제곱 구하기</button>
+    </div>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateSquare() {           
+            var number = document.getElementById('numberInput').value;                        
+            if (number === '') {
+                alert('숫자를 입력해주세요.');
+                return;
+            }            
+            number = parseFloat(number);           
+            var score = number * number;            
+            var resultElement = document.getElementById('result');
+            resultElement.innerHTML = '입력한 수의 제곱은 <strong>' + score + '</strong> 입니다.';
+        }
+    </script>
+    
+    </body>
+    </html>
+    <!-- 문제 )제곱구하기)    수를 입력받아 제곱을 구하기 
+ 
+     입력: 수 
+     출력: 제곱값
+     
+     처리과정: -->

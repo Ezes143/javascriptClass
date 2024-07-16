@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 별 문자 출력하기 </title>
+    <script>
+        function printStar(s) {
+            var s = parseInt(s);
+            if (isNaN(s) || s < 0) {
+                alert("입력 오류입니다");
+                return;
+            }
+            for (var i = 1; i <= s; i++) {
+                for (j = 1; j <= i; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>별 문자 출력하기</h3>
+    <hr>
+    <script>
+        var s = prompt("정수를 입력하세요", "");
+        printStar(s);
+    </script>
+
+</html>
+     
+<!-- 2. 수를 입력받아 원하는 만큼 별 출력하기 -->
+
+    </script>
+</body>
+</html>

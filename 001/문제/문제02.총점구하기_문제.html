@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 총점구하기</title>
+</head>
+
+<body>
+    <script>
+        let kor;
+        while (true) {
+            kor = Number(prompt("국어 점수를 입력하세요"));
+            if (kor >= 0 && kor <= 100) break;
+            alert("올바른 점수를 입력하세요 (0에서 100 사이).");
+        }
+
+        let eng;
+        while (true) {
+            eng = Number(prompt("영어 점수를 입력하세요"));
+            if (eng >= 0 && eng <= 100) break;
+            alert("올바른 점수를 입력하세요 (0에서 100 사이).");
+        }
+
+        let mat;
+        while (true) {
+            mat = Number(prompt("수학 점수를 입력하세요"));
+            if (mat >= 0 && mat <= 100) break;
+            alert("올바른 점수를 입력하세요 (0에서 100 사이).");
+        }
+
+        let message = "시험결과는?";
+        let sum = kor + eng + mat;
+        let avg = sum / 3;
+
+        alert(message);
+        alert("총점: " + sum);
+        alert("평균: " + avg);
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+</html>
