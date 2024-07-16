@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+    <img  src=""  id="rice">
+
+    <script>
+        // 요리재료
+        let 달걀 = "3개";
+        let 베이컨 = "1장";
+        let 양파 = "1/4개";
+        let 피망 = "1/4개";
+        let 당근 = "1/4개";s
+        let 토마토케찹 = "2큰술";
+        let 우유 = "3큰술";
+        let 후추 = "조금";
+        let 버터 = "1큰술";
+        let 식용유 = "조금";
+        let 양송이 = "적당히";
+
+        
+        function omuRice(달걀, 베이컨, 양파, 피망, 양송이, 당근, 토마토케찹, 우유, 후추, 버터, 식용유){
+            alert ("①" + 양파, + 베이컨, + 피망, + "은 잘게 썬다.")
+            alert ("②" + 양송이 +"는 얇게 썰어 모양을 살려낸다. ")
+            alert ("③팬에" + 버터 + "를 두르고 ①을 센불에다 볶다가" + 양송이 + "넣고소금" + 후추 + "를 친다.")
+            alert ("④간이 들면 찬밥을 넣어 누르면서 볶다가" + 토마토케찹 + "을 넣어 볶아 놓는다.")
+            alert ("⑤" + 달걀 + "은소금" + 후추 + "로 간하여 팬에 넓게 부친다.")
+            alert ("⑥" + 달걀 + "이 반쯤 익었을 때 ④를 중앙에 얹은 후" )
+            alert ("⑦ 한번 뒤집어 고루 익게 한후 보기 좋게접시에 담아낸다.")
+        
+            return "../img/omurice.jfif"
+        };
+        let image =document.getElementById("rice");
+
+        let result = omuRice(달걀, 베이컨, 양파, 피망, 양송이, 당근, 토마토케찹, 우유, 후추, 버터, 식용유)
+
+        image.src = result ;
+
+
+    </script>
+
+
+</body>
+</html>
