@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 정보 보여주기</title>
+<body>
+
+
+
+    <script>
+ const movies=[
+ {
+    title: "범죄도시4",
+    director:"허명행",
+    year :"2024",
+    genre: "액션, 범죄"
+ },
+ {
+    title: "듄",
+    director:"Denis Villeneuve",
+    year :"2021",
+    genre: "SF"
+ },
+ {
+    title: "서울의 봄",
+    director:"김성수",
+    year :"2023",
+    genre: "드라마"
+ },
+ {
+    title: "30일",
+    director:"남대중",
+    year :"2023",
+    genre: "코미디"
+ },
+ {
+    title: "더 마블스",
+    director:"Nia DaCosta",
+    year :"2023",
+    genre: "액션, SF"
+ },
+];
+
+
+function getrandomMovie(movies){
+    const randomIndex = Math.floor(Math.random() * movies.length)
+    return movies[randomIndex];    
+};
+
+const randomMovie = getrandomMovie(movies);
+console.log("오늘의 추천영화:");
+console.log(`제목: ${randomMovie.title}`)
+console.log(`감독: ${randomMovie.director}`)
+console.log(`개봉년도: ${randomMovie.year}`)
+console.log(`장르: ${randomMovie.genre}`)
+
+
+
+
+
+    </script>
+</body>
+</html> 
