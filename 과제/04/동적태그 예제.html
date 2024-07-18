@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #Nav{
+            background-color: rgb(74, 255, 83);
+        }
+        #Dau{
+            background-color: rgb(123, 213, 255);
+        }
+    </style>
+    <script>
+      function btna() {
+        let a = document.createElement("a");
+        a.style.backgroundColor = "lightgreen";
+        a.style.color = "black";
+        a.innerHTML = "Naver<br>";
+        a.href = "https://www.naver.com";
+        result.appendChild(a)        
+      }
+      function btnb() {
+        let a = document.createElement("a");
+        a.style.backgroundColor = "lightblue";
+        a.style.color = "black";
+        a.innerHTML = "Daum<br>";
+        a.href = "https://www.daum.net/";
+        result.appendChild(a);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="btna()" id="Nav">네이버</button>
+    <button onclick="btnb()" id="Dau">다음</button>
+    <div id="result"></div>
+  </body>
+</html>
